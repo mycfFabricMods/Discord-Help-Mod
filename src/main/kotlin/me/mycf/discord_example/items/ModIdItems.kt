@@ -14,7 +14,7 @@ object ModIdItems {
 
 
     /**
-     * Register [net.minecraft.item.Item.Item]s in here.
+     * Register [net.minecraft.item.Item]s in here.
      */
     init {
     }

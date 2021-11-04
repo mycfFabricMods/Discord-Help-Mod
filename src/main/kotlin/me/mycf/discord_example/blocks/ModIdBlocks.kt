@@ -19,7 +19,7 @@ object ModIdBlocks {
 
     /**
      * Register blocks in here.
-     * [net.minecraft.item.BlockItem.BlockItem] gets added automatically.
+     * [net.minecraft.item.BlockItem] gets added automatically.
      * If you wish to change the settings of the BlockItem implement your own methods for it.
      */
     init {
