@@ -1,1 +1,5 @@
-# A fabric example mod
+# A repository of answers to questions
+
+# Licence
+
+This project is licenced under the MIT licence. 

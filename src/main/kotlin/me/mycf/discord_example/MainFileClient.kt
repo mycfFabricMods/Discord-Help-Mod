@@ -1,6 +1,6 @@
 @file:Suppress("unused")
 
-package com.username.modid
+package me.mycf.discord_example
 
 import net.fabricmc.api.ClientModInitializer
 import net.fabricmc.api.EnvType

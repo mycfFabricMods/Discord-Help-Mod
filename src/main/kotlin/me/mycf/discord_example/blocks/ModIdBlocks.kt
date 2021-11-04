@@ -1,8 +1,8 @@
 @file:Suppress("SameParameterValue", "MemberVisibilityCanBePrivate")
 
-package com.username.modid.blocks
+package me.mycf.discord_example.blocks
 
-import com.username.modid.MainFile
+import me.mycf.discord_example.MainFile
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
 import net.minecraft.block.Block
 import net.minecraft.block.Blocks
@@ -16,7 +16,6 @@ object ModIdBlocks {
     private var BlockItemsRegistry = linkedMapOf<String, Item>()
     private var BlockRegistry = linkedMapOf<String, Block>()
 
-    val COOL_BLOCK: Block
 
     /**
      * Register blocks in here.
@@ -24,7 +23,6 @@ object ModIdBlocks {
      * If you wish to change the settings of the BlockItem implement your own methods for it.
      */
     init {
-        COOL_BLOCK = addBlock("coolblock", Block(FabricBlockSettings.copy(Blocks.STONE)))
     }
 
     private fun addBlock(name: String, block: Block): Block {
@@ -36,14 +34,14 @@ object ModIdBlocks {
     }
 
     public fun registerBlocks() {
-        this.BlockRegistry.forEach {
+        BlockRegistry.forEach {
             Registry.register(Registry.BLOCK, Identifier(MainFile.MOD_ID, it.key), it.value)
         }
         registerBlockItems()
     }
 
     private fun registerBlockItems() {
-        this.BlockItemsRegistry.forEach {
+        BlockItemsRegistry.forEach {
             Registry.register(Registry.ITEM, Identifier(MainFile.MOD_ID, it.key), it.value)
         }
     }

@@ -1,7 +1,7 @@
-package com.username.modid
+package me.mycf.discord_example
 
-import com.username.modid.blocks.ModIdBlocks
-import com.username.modid.items.ModIdItems
+import me.mycf.discord_example.blocks.ModIdBlocks
+import me.mycf.discord_example.items.ModIdItems
 import net.fabricmc.api.ModInitializer
 
 
@@ -13,7 +13,7 @@ import net.fabricmc.api.ModInitializer
  */
 @Suppress("UNUSED")
 object MainFile : ModInitializer {
-    const val MOD_ID = "mod_id"
+    const val MOD_ID = "discord_example"
 
 
     override fun onInitialize() {

@@ -1,9 +1,10 @@
 {
   "required": true,
-  "package": "com.username.modid.mixins",
+  "package": "me.mycf.discord_example.mixins",
   "compatibilityLevel": "JAVA_16",
   "injectors": {
     "defaultRequire": 1
   },
-  "mixins": []
+  "mixins": [
+  ]
 }
