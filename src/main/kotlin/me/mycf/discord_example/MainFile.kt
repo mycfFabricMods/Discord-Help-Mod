@@ -2,7 +2,6 @@ package me.mycf.discord_example
 
 import me.mycf.discord_example.blocks.ModIdBlocks
 import me.mycf.discord_example.items.ModIdItems
-import me.mycf.discord_example.mixins.MapColorMixin
 import net.fabricmc.api.ModInitializer
 
 

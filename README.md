@@ -1,5 +1,5 @@
 # A repository of answers to questions
 
-# Licence
+# License
 
-This project is licenced under the MIT licence. 
+This project is licenced under the MIT license. 
