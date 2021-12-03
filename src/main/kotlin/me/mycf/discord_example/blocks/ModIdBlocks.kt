@@ -3,7 +3,9 @@
 package me.mycf.discord_example.blocks
 
 import me.mycf.discord_example.MainFile
+import net.minecraft.block.AbstractBlock
 import net.minecraft.block.Block
+import net.minecraft.block.Blocks
 import net.minecraft.item.BlockItem
 import net.minecraft.item.Item
 import net.minecraft.item.ItemGroup
@@ -14,6 +16,7 @@ object ModIdBlocks {
     private var BlockItemsRegistry = linkedMapOf<String, Item>()
     private var BlockRegistry = linkedMapOf<String, Block>()
 
+    val COOLIO: Block
 
     /**
      * Register blocks in here.
@@ -21,6 +24,7 @@ object ModIdBlocks {
      * If you wish to change the settings of the BlockItem implement your own methods for it.
      */
     init {
+        COOLIO = addBlock("cool_block", Block(AbstractBlock.Settings.copy(Blocks.STONE)))
     }
 
     private fun addBlock(name: String, block: Block): Block {
@@ -31,7 +35,7 @@ object ModIdBlocks {
         return block
     }
 
-    public fun registerBlocks() {
+    fun registerBlocks() {
         BlockRegistry.forEach {
             Registry.register(Registry.BLOCK, Identifier(MainFile.MOD_ID, it.key), it.value)
         }

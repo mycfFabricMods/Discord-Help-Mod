@@ -34,6 +34,8 @@ dependencies {
 
     // Kotlin Language Adapter
     modImplementation("net.fabricmc:fabric-language-kotlin:$fabricKotlinVersion")
+
+    implementation("io.arrow-kt:arrow-core:1.0.1")
 }
 
 tasks {
